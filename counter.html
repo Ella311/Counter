@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+body{
+height:auto;
+background-color: rgba(12, 27, 162, 1); 
+  background-image: linear-gradient( to bottom right,rgba(0, 16, 171, 0.96),rgba(57, 255, 243, 1));
+
+
+}
+
+h1{
+font-size: 40px;
+font-family: 'Poppins';}
+
+.wrapper{
+  border-radius: 25px;
+background-color: white;
+margin: 250px 450px 400px 500px;
+
+}
+h2{
+text-align: center;
+font-family: 'Poppins';
+font-size: 150px;
+background-color: white;
+color: blue;
+
+}
+
+
+ button {
+width: 300px;
+ height: 50px;
+ border-radius: 25px;
+border-style: solid;
+border-color: blue;
+background-color: white;
+color: blue;
+margin: 10px 60px 10px 20px;
+margin-color: blue;
+            }
+button:hover{
+background-color: blue;
+}
+.in,.de{
+text-align: left;}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCounterApp</h1>
+	<div class="counting">
+	<h2 id="counting"></h2>
+	
+	<button onclick="increment()"><div class="in">
+	<span class="glyphicon glyphicon-plus-sign"></span>
+	    <p1>Increment</p1></div></div>
+	
+	<button onclick="decrement()"><div class="de">
+	 <span class="glyphicon glyphicon-minus-sign"></span>
+	<p2>Decrement</p2></div>
+	</div>
+	<br>
+	<br>
+</div></div>
+ <script>
+            //initialising a variable name data
+            var data = 78;
+  
+            //printing default value of data that is 0 in h2 tag
+            document.getElementById("counting").innerText = data;
+  
+            //creation of increment function
+            function increment() {
+                data = data + 1;
+                document.getElementById("counting").innerText = data;
+            }
+            //creation of decrement function
+            function decrement() {
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+        </script>
+</body>
+</html>
